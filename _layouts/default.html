@@ -35,7 +35,8 @@
     </div>
     <div id='bibliography'>
         <div class='wrap'>
-            {% bibliography --cited %}
+            <!-- {% bibliography --cited %} -->
+            {% bibliography --query @*[cited] %}
         </div>
     </div>
 </div>
