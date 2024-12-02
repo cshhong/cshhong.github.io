@@ -20,6 +20,6 @@ kramdown:
   syntax_highlighter: rouge
 
 scholar:
-  style: ieee                 # Example: Use IEEE citation style
+  style: _bibliography/ieee.csl                 # Example: Use IEEE citation style
   locale: en
   suppress_author: false
