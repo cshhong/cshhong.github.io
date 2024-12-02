@@ -135,6 +135,40 @@ h1 {
 .article .figure .caption-label {
   font-weight: bold;
 }
+
+/* Style for the figure-container */
+.article .figure-container {
+  display: flex; /* Enables side-by-side layout */
+  flex-direction: column; /* Ensures caption is below the images */
+  align-items: center; /* Centers the entire figure-container */
+  text-align: center; /* Centers the caption horizontally */
+  padding: 10px 0; /* Adds spacing around the figure container */
+}
+
+.article .figure-container .image-wrapper {
+  display: flex; /* Enables side-by-side layout for images */
+  gap: 10px; /* Adds spacing between the images */
+  justify-content: center; /* Centers the images horizontally */
+  flex-wrap: wrap; /* Allows wrapping to the next line if space is limited */
+}
+
+.article .figure-container .image-wrapper img {
+  display: inline-block; /* Ensures images are treated as inline-blocks */
+  margin: 0 auto; /* Centers images individually */
+  max-width: 100%; /* Ensures images don't overflow their container */
+  height: auto; /* Maintains image aspect ratio */
+}
+
+.article .figure-container .caption {
+  padding-top: 8px; /* Spacing between images and caption */
+  font-size: 14px; /* Caption font size */
+  line-height: 1.5em; /* Caption line height */
+  text-align: left; /* Aligns the caption text to the left */
+  color: #a8a8a8; /* Caption text color */
+  font-style: italic; /* Makes the caption text italic */
+  max-width: 100%; /* Ensures caption doesn't exceed container width */
+}
+
 .article .footnote {
   line-height: 0;
 }
