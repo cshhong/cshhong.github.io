@@ -121,15 +121,15 @@ h1 {
 }
 
 .article .figure .caption {
-  padding-top: 8px;
+  padding-top: 5px;
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5em;
   text-align: left; /* Align the caption to the left */
   color: #a8a8a8; /* Caption text color */
   max-width: 100%; /* Optional: Keeps caption width consistent with the image */
   margin: 0 auto; /* Centers the caption container */
-  font-style: italic; /* Makes the caption text italic */
+  /* font-style: italic; Makes the caption text italic */
 }
 
 .article .figure .caption-label {
@@ -194,7 +194,7 @@ h1 {
   padding-left: 15px;
   padding-top: 30px;
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(116, 116, 116, 0.5);
 }
 #blog {
   margin-top: 80px;
