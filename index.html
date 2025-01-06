@@ -28,24 +28,29 @@ title: index
     <link rel='shortcut icon' href='/favicon.png?v=e' />
 </head>
 <body>
+    {% comment %}
     {% include nav.html %}
+    {% endcomment %} 
     <div id='landing'>
-        <h1>Chloe (Soo hwa) Hong</h1>
-        <ul id='links'>
-            <!-- <li>
-                <a href='/publications'>Publications</a>
-            </li> -->
-            <li>
-                <a href='/blog'>Blog</a>
-            </li>
-            <li>
-                <a href='https://github.com/cshhong' target='_blank'>Github</a>
-            </li>
-            <li id='contact'>
-                cshhong at mit dot edu
-            </li>
-        </ul>
+    <h1>Chloe (Soo hwa) Hong</h1>
+    <ul id='links'>
+        <li><a href='https://github.com/cshhong' target='_blank'>github</a></li>
+        <li><a href='https://www.dropbox.com/scl/fi/x9xun465jrpo80r2eo5t5/2025Jan_CV_Hong.pdf?rlkey=bky3gm0xuhgdvxju5117ku0ul&dl=0' target='_blank'>cv</a></li>
+        <li><a href='https://www.linkedin.com/in/chloe-hong1101/' target='_blank'>linkedin</a></li>
+        <li id='contact'>cshhong at mit dot edu</li>
+        <!-- <li><a href='/blog'>blog</a></li> -->
+    </ul>
+    <div id="bio-container">
+        <p id="bio">
+            I am a second year PhD candidate in <a href="https://architecture.mit.edu/building-technology" target="_blank" rel="noopener noreferrer">Building Technology</a> at <a href="https://www.mit.edu/" target="_blank" rel="noopener noreferrer">MIT</a>, advised by <a href="http://www.caitlinmueller.com/" target="_blank" rel="noopener noreferrer">Caitlin Mueller</a>,  within the <a href="http://digitalstructures.mit.edu/" target="_blank" rel="noopener noreferrer">Digital Structures Group</a> . Before that, I received my M.S. in Computational Design at <a href="https://www.cmu.edu/" target="_blank" rel="noopener noreferrer">Carnegie Mellon University</a> advised by <a href="https://www.architecture.cmu.edu/profiles/daniel-cardoso-llach/" target="_blank" rel="noopener noreferrer">Daniel Cardoso Llach</a>  and <a href="https://engineering.cmu.edu/directory/bios/mccomb-christopher.html" target="_blank" rel="noopener noreferrer">Chris McComb</a>, with a concentration in machine learning, computational geometry and fabrication. I completed my Bachelor's at <a href="https://en.snu.ac.kr/index.html" target="_blank" rel="noopener noreferrer">Seoul National University</a>.  
+            <br><span style="display: block; height: 1em;"></span> <!-- Extra blank line -->
+            My research focuses on furthering computational methods to create novel designs that can be built, and finding better ways to build designs. Specifically, I am interested in developing generative models that can simulaneously reason geometry, realistic conditions in the construction process such as reuse of existing materials, assembly sequences, and physical conditions in the realworld environment such as structural behavior. I seek to expand performance driven design to larger design spaces where existing optimization frames become intractable and to navigate this complexity by leveraging the tacit sensibility involved in architecture design and building practices. 
+            <br><span style="display: block; height: 1em;"></span> <!-- Extra blank line -->
+            Topics that excite me include optimization, geometric representation, physical simulation and interpretable and customizeable generative models. Check out my <a href='/blog'>blog</a>. 
+        </p>
+        <img id="profile-image" src="assets/images/2022_profile_mirror_300.png" alt="Chloe Hong">
     </div>
+</div>
 </body>
 </html>
 

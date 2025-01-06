@@ -1,14 +1,17 @@
-/* gregorygundersen.com
- * 2020-02-16
+/* 
+https://cshhong.github.io/ 
+edit 2025-01-05
+edit from gregorygundersen.com
  */
 
 body {
 	color: rgba(0, 0, 0, 0.8);
 	font-family: -apple-system, Helvetica, arial, sans-serif;
-	font-size: 15px;
-	margin: 7px;
+	font-size: 14px;
+	margin: 10px;
 	padding: 0;
 }
+
 a {
 	color: rgba(0, 0, 0, 0.8);
 }
@@ -16,6 +19,42 @@ a:hover {
 	color: rgba(0, 0, 0, 0.8);
 	text-decoration: none;
 }
+#bio-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: top; /* Align items vertically */
+    gap: 50px; /* Space between bio and image */
+	justify-content: space-between; /* Ensure spacing between bio text and image */
+    max-width: 100%; /* Ensure the container doesn't exceed the page width */
+    flex-wrap: nowrap; /* Prevent wrapping of the content */
+}
+
+#bio {
+    font-family: Helvetica, sans-serif; /* Use Helvetica explicitly */
+    font-size: 12px; /* Optional: Adjust font size to match or differentiate from body */
+    line-height: 1.5; /* Increase vertical spacing between lines */
+    color: rgba(0, 0, 0, 0.5); /* Match the text color of the body */
+    margin: 10px 0; /* Add spacing above and below the bio */
+    padding: 0; /* No extra padding */
+	flex: 1; /* Allow bio to take up remaining space */
+}
+#bio a {
+    color: #007acc; /* Link color */
+    text-decoration: none; /*Underline links*/
+}
+
+#bio a:hover {
+    color: #005a9c; /* Change color on hover */
+}
+
+#profile-image {
+    width: 200px; /* Adjust the size of the profile image */
+    height: 200px; /* Ensure the image is square */
+    border-radius: 50%; /* Optional: Make the image circular */
+    object-fit: cover; /* Crop the image if it doesn't fit perfectly */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+
 h1 {
 	font-size: 24px;
 }
@@ -23,7 +62,7 @@ h1 {
 	max-width: 700px;
 	margin: 119px auto;
 }
-#landing ul#links {
+/* #landing ul#links {
 	list-style-type: none;
 	padding-left: 0;
 	margin: 0 0 20px 0;
@@ -35,12 +74,42 @@ h1 {
 }
 #landing ul#links li a:hover {
 	text-decoration: none;
-}
-#landing ul#links li#contact {
+} */
+/* #landing ul#links li#contact {
 	font-family: courier;
 	margin: 0;
-	padding-top: 5px;
+	padding-top: 0px;
+} */
+/*
+Hong edit 2025-01-05
+*/
+#landing ul#links {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items in a row */
+    gap: 1rem; /* Space between items */
+    font-family: courier; /* Apply the same font style */
+    font-size: 0.9rem; /* Smaller font size */
 }
+
+#landing ul#links li {
+    display: inline; /* Inline items */
+}
+
+#landing ul#links li a, /* Style Blog and Github links */
+#landing ul#links li#contact { /* Style Contact text */
+    /* text-decoration: underline; Underline all items */
+    color: inherit; /* Use the same color */
+}
+
+#landing ul#links li:not(:last-child)::after { /* Add vertical bar between items except the last */
+    content: '	|'; /* Vertical bar */
+    margin-left: 0rem; /* Space before the bar */
+    margin-right: 0rem; /* Space after the bar */
+}
+
+/**/
 #landing .section ul {
 	padding-left: 15px;
 }
