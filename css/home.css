@@ -261,7 +261,7 @@ h1 {
 }
 
 .publication-content .pub-description {
-	font-size: 15px;
+	font-size: 14px;
 	color: rgba(0, 0, 0, 0.5); /* Changed to darker grey from 0.7 */
 	line-height: 1.4;
 	margin-bottom: 5px;
