@@ -34,22 +34,137 @@ title: index
     <div id='landing'>
     <h1>Chloe (Soo hwa) Hong</h1>
     <ul id='links'>
+        <li><a href='assets/2025Nov_CV_Hong.pdf' target='_blank'>cv</a></li>
         <li><a href='https://github.com/cshhong' target='_blank'>github</a></li>
-        <li><a href='assets/2025Jan_CV_Hong_greylink.pdf' target='_blank'>cv</a></li>
+        <li><a href='https://scholar.google.com/citations?user=sjZXW24AAAAJ&hl=en&oi=ao' target='_blank'>google scholar</a></li>
         <li><a href='https://www.linkedin.com/in/chloe-hong1101/' target='_blank'>linkedin</a></li>
         <li id='contact'>cshhong at mit dot edu</li>
         <!-- <li><a href='/blog'>blog</a></li> -->
     </ul>
     <div id="bio-container">
         <p id="bio">
-            I am a second year PhD candidate in <a href="https://architecture.mit.edu/building-technology" target="_blank" rel="noopener noreferrer">Building Technology</a> at <a href="https://www.mit.edu/" target="_blank" rel="noopener noreferrer">MIT</a>, advised by <a href="http://www.caitlinmueller.com/" target="_blank" rel="noopener noreferrer">Caitlin Mueller</a>,  within the <a href="http://digitalstructures.mit.edu/" target="_blank" rel="noopener noreferrer">Digital Structures Group</a> . Before that, I received my M.S. in Computational Design at <a href="https://www.cmu.edu/" target="_blank" rel="noopener noreferrer">Carnegie Mellon University</a> advised by <a href="https://www.architecture.cmu.edu/profiles/daniel-cardoso-llach/" target="_blank" rel="noopener noreferrer">Daniel Cardoso Llach</a>  and <a href="https://engineering.cmu.edu/directory/bios/mccomb-christopher.html" target="_blank" rel="noopener noreferrer">Chris McComb</a>, with a concentration in machine learning, computational geometry and fabrication. I completed my Bachelor's at <a href="https://en.snu.ac.kr/index.html" target="_blank" rel="noopener noreferrer">Seoul National University</a>.  
+            I am a PhD candidate in <a href="https://architecture.mit.edu/building-technology" target="_blank" rel="noopener noreferrer">Building Technology</a> at <a href="https://www.mit.edu/" target="_blank" rel="noopener noreferrer">MIT</a>, advised by <a href="http://www.caitlinmueller.com/" target="_blank" rel="noopener noreferrer">Caitlin Mueller</a>,  within the <a href="http://digitalstructures.mit.edu/" target="_blank" rel="noopener noreferrer">Digital Structures Group</a>. Previously, I received my M.S. in Computational Design at <a href="https://www.cmu.edu/" target="_blank" rel="noopener noreferrer">Carnegie Mellon University</a>, with a concentration in machine learning, computational geometry and fabrication and my Bachelor's at <a href="https://en.snu.ac.kr/index.html" target="_blank" rel="noopener noreferrer">Seoul National University</a>. Here are some <a href="https://www.dropbox.com/scl/fi/1oy1kjb4e8vd71tzewl3z/phd-masters_application.pdf?rlkey=8o20ox6u4fa626e7asp409m8f&dl=0" target="_blank" rel="noopener noreferrer">cool projects</a> that I have done in the past. 
             <br><span style="display: block; height: 1em;"></span> <!-- Extra blank line -->
-            My research focuses on furthering computational methods to create novel designs that can be built, and to find better ways to build designs. Specifically, I am interested in developing generative models that can simultaneously reason geometry, realistic conditions in the construction process such as reuse of existing materials, assembly sequences, and structural behavior. I seek to advance performance driven design to larger design spaces where existing optimization frames become intractable and to leverage the tacit sensibility involved in architecture practices to navigate this complexity. 
+            My research focuses on generative design systems that bridge probabilistic modeling, differentiable physics-based solvers, and cross-topology exploration to create designs that can be built in the real world. Drawing from architectural and structural engineering principles as well as computer graphics and scientific computing, I develop algorithmic frameworks and representations that enable computational reasoning between geometry, physical soundness, constructibility, and performance. In particular, I am interested in efficiently searching the space of inherently discrete and combinatorial real-world designs, common, though not limited, to structural design, where solutions are composed from finite sets of components while satisfying geometric and physical constraints. 
             <br><span style="display: block; height: 1em;"></span> <!-- Extra blank line -->
-            Topics that excite me are optimization, geometric representation, physical simulation and interpretable and customizable generative models. Check out my <a href='/blog'>blog</a>. 
+            <!-- Topics that excite me are optimization, geometric representation, physical simulation and interpretable and customizable generative models. Check out my <a href='#blog-posts'>blog posts</a>.  -->
         </p>
         <img id="profile-image" src="assets/images/2022_profile_mirror_300.png" alt="Chloe Hong">
     </div>
+
+    <!-- Publications and Projects Section -->
+    <div id="publications">
+        <h2>Publications & Projects</h2>
+        
+        <!-- StructRL Engineer -->
+        <div class="publication-item">
+            <div class="publication-image">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/videos/teaser_board.mp4" type="video/mp4">
+                    <source src="assets/videos/your-video.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="publication-content">
+                <p class="pub-title">
+                    <a href="#"><strong>StructRL Engineer : Deep reinforcement learning for efficient exploration of combinatorial structural design spaces</strong></a>
+                    <span class="pub-venue">(IASS 2025)</span>
+                </p>
+                <p class="pub-authors">
+                    <u>Chloe S.H. Hong</u>,
+                    <a href="https://keithjlee.com/">Keith J. Lee</a>,
+                    <a href="http://digitalstructures.mit.edu/">Caitlin T. Mueller</a>
+                </p>
+                <p class="pub-description">
+                    <i>StructRL Engineer</i> is a reinforcement learning framework that formulates structural design as a sequential decision-making process, and employs a two-phase training algorithm to generate high-performing, constructible structures tailored to specific boundary conditions. It learns bottom-up form finding strategies that balance structural behavior and material efficiency, revealing emergent reasoning for navigating large combinatorial design spaces.
+                </p>
+                <p class="pub-links">
+                    <a href="https://cshhong.github.io/TrussFrameRL/">Project page</a>
+                    |
+                    <a href="https://arxiv.org/pdf/2507.22804">Paper</a>
+                    |
+                    <a href="https://github.com/cshhong/TrussFrameRL">Code</a>
+                </p>
+            </div>
+        </div>
+        
+        <!-- RevitAssembly -->
+        <div class="publication-item">
+            <div class="publication-image">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/videos/window_gif.mp4" type="video/mp4">
+                    <source src="assets/videos/your-video.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="publication-content">
+                <p class="pub-title">
+                    <a href="#"><strong>RevitAssembly</strong></a>
+                    <span class="pub-venue">(Autodesk 2023)</span>
+                </p>
+                <p class="pub-authors">
+                    <u>Chloe S.H. Hong</u>
+                </p>
+                <p class="pub-description">
+                    RevitAssembly is an assembly-aware graph representation for 3D models of building components involving geometric and semantic compositional constraints. Geometric data and tabular annotations from Revit 3D models are queried and linked to generate a dataset used for generative tasks.
+                </p>
+                <p class="pub-links">
+                    <a href="https://github.com/cshhong/revit_assembly">Code</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- -->
+        <div class="publication-item">
+            <div class="publication-image">
+                <img src="assets/images/humanAIPartner.png" alt="Human-AI Partnership">
+            </div>
+            <div class="publication-content">
+                <p class="pub-title">
+                    <a href="#"><strong>Adaptation and Challenges in Human-AI Partnership for the Design of Complex Engineering Systems</strong></a>
+                    <span class="pub-venue">(IDETC/CIE 2023)</span>
+                </p>
+                <p class="pub-authors">
+                    Zeda Xu<sup>*</sup>, <u>Chloe S.H. Hong<sup>*</sup></u>, Nicolás F Soria Zurita, Joshua T Gyory, Gary Stump, Hannah Nolte, Jonathan Cagan, Christopher McComb
+                    <span class="pub-equal-contrib">(<sup>*</sup>equal contribution)</span>
+                </p>
+                <p class="pub-description">
+                    This work explores how Artificial Intelligence (AI) can be integrated into human team problem solving to create genuine human-AI partnerships capable of dynamic adaptability. Using the HyForm collaborative research platform, we show that AI design partners can act as proactive and reactive teammates in complex engineering tasks—adapting to unexpected changes comparably to humans, though with remaining challenges in coordination and communication.
+                </p>
+                <p class="pub-links">
+                    <a href="https://www.researchgate.net/profile/Zeda-Xu/publication/375810767_Adaptation_and_Challenges_in_Human-AI_Partnership_for_the_Design_of_Complex_Engineering_Systems/links/6581f08b6f6e450f19885ed0/Adaptation-and-Challenges-in-Human-AI-Partnership-for-the-Design-of-Complex-Engineering-Systems.pdf">Paper</a>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Blog Posts Section -->
+    <div id="blog-posts">
+        <h2>Blog Posts</h2>
+        <div id='posts'>
+            {% for post in site.posts %}
+                <div class='post-row'>
+                    <p class='post-title'>
+                        <a href="{{ site.url }}{{ post.url }}">
+                            {% katexmm %}
+                            {{ post.title }}
+                            {% endkatexmm %}
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        {{ post.date | date_to_long_string }}
+                    </p>
+                    <p class='post-subtitle'>
+                        {% katexmm %}
+                        {{ post.subtitle }}
+                        {% endkatexmm %}
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
 </div>
 </body>
 </html>

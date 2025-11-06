@@ -36,7 +36,7 @@ h1 {
   display: none;
 }
 .wrap {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .mono {
@@ -253,8 +253,95 @@ h1 {
 hr {
   border-top: #ccc;
 }
+/* Mobile Responsive Styles */
 @media screen and (max-width: 700px) {
   body {
     margin: 0 7px;
   }
+  
+  .wrap {
+    padding: 0 15px; /* Add horizontal padding */
+  }
+  
+  .front-matter {
+    padding: 15px 0; /* Reduce padding */
+  }
+  
+  .front-matter h1 {
+    font-size: 20px; /* Smaller title on mobile */
+    line-height: 1.3em;
+  }
+  
+  .front-matter h4 {
+    font-size: 14px; /* Smaller subtitle */
+  }
+  
+  .front-matter .bylines .byline {
+    margin-right: 15px; /* Reduce margin */
+    float: none; /* Stack bylines vertically on very small screens */
+  }
+  
+  .article {
+    font-size: 14px; /* Slightly smaller article text */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .article img {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto;
+  }
+  
+  #blog .post-title a {
+    font-size: 16px; /* Smaller post titles */
+  }
+  
+  #blog .post-subtitle {
+    font-size: 13px;
+  }
+  
+  #blog .year {
+    position: static; /* Remove absolute positioning on mobile */
+    right: auto;
+    width: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  pre, code {
+    font-size: 12px; /* Smaller code blocks */
+    overflow-x: auto; /* Allow horizontal scrolling for code */
+  }
 }
+
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0 5px;
+  }
+  
+  .wrap {
+    padding: 0 10px;
+  }
+  
+  .front-matter h1 {
+    font-size: 18px;
+  }
+  
+  .front-matter h4 {
+    font-size: 13px;
+  }
+  
+  .article {
+    font-size: 13px;
+  }
+  
+  #blog .post-title a {
+    font-size: 15px;
+  }
+}
+
