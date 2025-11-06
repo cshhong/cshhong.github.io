@@ -261,13 +261,12 @@ h1 {
 }
 
 .publication-content .pub-description {
-	font-size: 14px;
+	font-size: 15px;
 	color: rgba(0, 0, 0, 0.5); /* Changed to darker grey from 0.7 */
 	line-height: 1.4;
 	margin-bottom: 5px;
 	margin-top: 0; /* Remove any top margin */
-	text-align: justify; /* Makes text span to both edges */
-	width: 100%; /* Ensure full width */
+	text-align: justify; /* Justify on desktop */
 }
 
 .publication-content .pub-links {
@@ -340,13 +339,13 @@ h1 {
 	}
 	
 	#bio-container {
-		flex-direction: column; /* Stack bio and image vertically */
+		flex-direction: column-reverse; /* Stack vertically with image on top */
 		gap: 20px; /* Reduce gap */
 		align-items: center; /* Center align items */
 	}
 	
 	#bio {
-		font-size: 11px; /* Slightly smaller text */
+		font-size: 16px; /* Increased by 2x from 11px */
 		text-align: left; /* Keep left-aligned */
 	}
 	
@@ -358,7 +357,7 @@ h1 {
 	
 	#landing ul#links {
 		flex-wrap: wrap; /* Allow wrapping if needed */
-		font-size: 0.85rem; /* Slightly smaller */
+		font-size: 1.275rem; /* Increased by 1.5x from 0.85rem */
 		gap: 0.8rem;
 	}
 	
@@ -381,7 +380,7 @@ h1 {
 	
 	#publications h2,
 	#blog-posts h2 {
-		font-size: 18px;
+		font-size: 27px; /* Increased by 1.5x from 18px */
 	}
 	
 	.publication-item {
@@ -396,20 +395,21 @@ h1 {
 	}
 	
 	.publication-content .pub-title {
-		font-size: 14px;
+		font-size: 21px; /* Increased by 1.5x from 14px */
 	}
 	
 	.publication-content .pub-authors,
 	.publication-content .pub-description {
-		font-size: 13px;
+		font-size: 16px; /* Match bio text size on tablet */
+		text-align: left; /* Left align on tablet */
 	}
 	
 	#blog-posts .post-title a {
-		font-size: 15px;
+		font-size: 22.5px; /* Increased by 1.5x from 15px */
 	}
 	
 	#blog-posts .post-subtitle {
-		font-size: 13px;
+		font-size: 16px; /* Increased by 1.5x from 13px */
 	}
 }
 
@@ -425,21 +425,21 @@ h1 {
 	}
 	
 	h1 {
-		font-size: 18px;
+		font-size: 27px; /* Increased by 1.5x from 18px */
 	}
 	
 	#bio {
-		font-size: 10px;
+		font-size: 16px; /* Increased by 2x from 10px */
 		line-height: 1.4;
 	}
 	
 	#profile-image {
-		width: 120px;
-		height: 120px;
+		width: 200px;
+		height: 200px;
 	}
 	
 	#landing ul#links {
-		font-size: 0.75rem;
+		font-size: 1.125rem; /* Increased by 1.5x from 0.75rem */
 		gap: 0.6rem;
 	}
 	
@@ -458,32 +458,37 @@ h1 {
 	
 	#publications h2,
 	#blog-posts h2 {
-		font-size: 16px;
+		font-size: 24px; /* Increased by 1.5x from 16px */
 	}
 	
 	.publication-content .pub-title {
-		font-size: 13px;
+		font-size: 20px; /* Increased to be larger than content */
+		text-align: left;
 	}
 	
 	.publication-content .pub-authors,
-	.publication-content .pub-venue,
+	.publication-content .pub-venue {
+		font-size: 18px; /* Increased by 1.5x from 12px */
+	}
+	
 	.publication-content .pub-description {
-		font-size: 12px;
+		font-size: 16px; /* Match bio text size on phone */
+		text-align: left; /* Left align on phone */
 	}
 	
 	.publication-content .pub-links {
-		font-size: 12px;
+		font-size: 18px; /* Increased by 1.5x from 12px */
 	}
 	
 	#blog-posts .post-title a {
-		font-size: 14px;
+		font-size: 21px; /* Increased by 1.5x from 14px */
 	}
 	
 	#blog-posts .post-date {
-		font-size: 10px;
+		font-size: 15px; /* Increased by 1.5x from 10px */
 	}
 	
 	#blog-posts .post-subtitle {
-		font-size: 12px;
+		font-size: 16px; /* Increased by 1.5x from 12px */
 	}
 }
