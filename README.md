@@ -1,5 +1,48 @@
 # Homepage
 
+## Hosting and publishing
+
+This is a Jekyll website hosted at [cshhong.github.io](https://cshhong.github.io/) through GitHub Pages. The GitHub Actions workflow in [`.github/workflows/jekyll.yml`](.github/workflows/jekyll.yml) builds and deploys the site automatically whenever changes are pushed to the `master` branch.
+
+To publish a change, review it locally, then commit and push it to `master`:
+
+```bash
+git add .
+git commit -m "Describe the change"
+git push origin master
+```
+
+Deployment progress is available in the repository's **Actions** tab. The live site updates after the deployment workflow completes.
+
+## Where to make edits
+
+- `index.html` — homepage bio, publications/projects, and homepage-specific content.
+- `_posts/` — blog posts, written in Markdown with Jekyll front matter.
+- `_includes/` — reusable pieces such as the navigation, bibliography, and math setup.
+- `_layouts/` — shared blog-page and post-page layouts.
+- `css/` — site styling; `css/home.css` controls the homepage.
+- `assets/` — images, videos, PDFs, and other files served by the site.
+- `_config.yml` — site-wide settings, URL, permalink format, and Jekyll plugins.
+- `_bibliography/` — bibliography data and citation style for Jekyll Scholar.
+
+After editing content or adding an asset, run the local server below to confirm links, layout, and rendering before publishing.
+
+## Test locally
+
+Install the Ruby dependencies once (or after changing `Gemfile`):
+
+```bash
+bundle install
+```
+
+Then start the development server from the repository root:
+
+```bash
+bundle exec jekyll serve
+```
+
+Open the URL printed in the terminal (normally <http://localhost:4000>). The server watches for most changes; restart it after changing `_config.yml`.
+
 ## Template forked from
 This repository contains the files needed to replicate my blog: [gregorygundersen.com/blog](http://gregorygundersen.com/blog/).  
 For detailed background information, see [this post](http://gregorygundersen.com/blog/2020/06/21/blog-theme).
@@ -32,13 +75,7 @@ For detailed background information, see [this post](http://gregorygundersen.com
 
 ---
 
-## Useful Commands
-
-### Test Locally
-Run the site locally to preview changes:
-```bash
-bundle exec jekyll serve
-```
+## Useful commands
 
 ### Clear Jekyll cache
 ```bash
